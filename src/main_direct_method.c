@@ -8,7 +8,7 @@
 
 
 /* For FMB_Info.save: */
-#define RESULTS_DIR "/tmp/NBODY_direct_results_LOGINS/"
+#define RESULTS_DIR "/tmp/NBODY_direct_results_2963xxx/"
 #define RESULTS_FILE "results_"
 
 
@@ -39,6 +39,7 @@ int parse_command(int argc,
 *********************************************************************************************/
 
 int main(int argc, char **argv){
+  //#SENIM#//
   //Tune argc and argv to fit regular
   //must be mpirun -c x -hostfile hf bin options
   argv[4]=argv[0];
@@ -223,6 +224,8 @@ int main(int argc, char **argv){
 
   }  /* while ( tnow-FMB_Info.dt <= tend )  */
   
+  //#SENIM#//
+  //juste pour tester on synchronize
   MPI_Barrier(MPI_COMM_WORLD);
   
   /******************************************************************************************/
@@ -241,7 +244,8 @@ int main(int argc, char **argv){
   FMB_free(data_file);
 
   /****************************************** EXIT ******************************************/
-    MPI_Finalize();
+   //#SENIM#// 
+   MPI_Finalize();
 	exit(EXIT_SUCCESS);
 }
 
