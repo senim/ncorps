@@ -1,0 +1,21 @@
+lib/math_implementation.o: src/math_implementation.c \
+  include/math_implementation.h include/position.h include/parameters.h \
+  include/agreements.h include/config.h
+lib/bodies.o: src/bodies.c include/bodies.h include/body.h \
+  include/position.h include/parameters.h include/agreements.h \
+  include/config.h include/force_definition.h include/memory_allocation.h \
+  include/direct_computation.h include/bodies.h include/IO.h \
+  src/direct_computation.c include/direct_computation.h
+lib/memory_allocation.o: src/memory_allocation.c \
+  include/memory_allocation.h include/parameters.h include/agreements.h \
+  include/config.h include/IO.h include/body.h include/position.h \
+  include/parameters.h include/force_definition.h include/bodies.h \
+  include/memory_allocation.h include/direct_computation.h
+lib/IO.o: src/IO.c include/IO.h include/body.h include/position.h \
+  include/parameters.h include/agreements.h include/config.h \
+  include/force_definition.h include/bodies.h include/memory_allocation.h \
+  include/direct_computation.h include/parameters.h
+lib/direct_method.o: src/direct_method.c include/direct_method.h \
+  include/bodies.h include/body.h include/position.h include/parameters.h \
+  include/agreements.h include/config.h include/force_definition.h \
+  include/memory_allocation.h include/direct_computation.h include/IO.h

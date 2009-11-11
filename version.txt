@@ -1,0 +1,24 @@
+
+### Version: 
+- sequential only
+- direct computation only (no FMM)
+- direct own computation only  
+- no _INTERACTION_BETWEEN_2_BOXES_
+- NEMO I/O 
+- time integration 
+- auto doc with doxygen 
+- version without _BODIES_SPLIT_DATA_ and with _BODIES_SPLIT_DATA_ 
+- only force computation (no potential computation)
+- single precision (default) or double precision 
+- gravitional potential 
+- softening used 
+
+
+
+### Authors: 
+Pierre FORTIN (LIP6)
+Sethy MONTAN (Polytech'Paris - UPMC) 
+
+
+
+  
